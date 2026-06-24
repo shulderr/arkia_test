@@ -14,7 +14,6 @@ export const useFilteredTasks = () => {
     const searched = searchTasks(tasks, searchTerm);
     const filtered = filterTasks(searched, filters);
     const sorted = sortTasks(filtered, order);
-    console.log("sortOrder:", order, "→", sorted.map((t) => t.createdAt));
     return sorted;
   }, [tasks, searchTerm, filters, order]);
 };
