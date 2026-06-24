@@ -1,5 +1,7 @@
+import TaskInbox from "./pages/TaskInbox.jsx";
+
 function App() {
-  return <h1>Get started</h1>;
+  return <TaskInbox />;
 }
 
 export default App;
